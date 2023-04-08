@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blackjack Reviews</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+      </style> 
+    <script src="data.js"></script>
+    <script src="reviews.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+            <a href="index.html"><img src="media/logo.webp" alt="Site Logo" width="50" height="50"></a>
+        </div>
+        <nav>
+            <a href="info.html#rules">RULES</a>
+            <a href="info.html#strategies">STRATEGIES</a>
+            <a href="info.html#history">HISTORY</a>
+            <a href="reviews.html">REVIEWS</a>
+            <a href="about.html">ABOUT</a>
+        </nav>
+    </header>
+
+    <main>
+      <div id="review-cards"></div>
+      <div class="form-card">
+        <form id="review-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="rating">Rating:</label>
+          <select id="rating" name="rating">
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3" selected>3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+          </select>
+
+          <label for="reviewText">Review:</label>
+          <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
+
+          <button type="submit" id="create-btn">Create</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

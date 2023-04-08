@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blackjack Guide</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+    </style>        
+  </head>
+
+  <body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="media/logo.webp" alt="Site Logo" width="50" height="50"></a>
+        </div>
+        <nav>
+            <a href="info.html#rules">RULES</a>
+            <a href="info.html#strategies">STRATEGIES</a>
+            <a href="info.html#history">HISTORY</a>
+            <a href="reviews.html">REVIEWS</a>
+            <a href="about.html">ABOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="card-content">
+              <div class="card-text">
+                <h1>LORENZO'S BLACKJACK GUIDE</h1>
+                <h2>What Is Blackjack?</h2>
+                <p>Blackjack is a popular casino card game played between a dealer and one or more players. 
+                    The game involves trying to get a higher total point value than the dealer, without exceeding 21.
+                    Each player is dealt two cards, and they can choose to hit (draw another card) or stand (keep their current hand). 
+                    The dealer must hit until their hand reaches a value of 17 or more. The game combines skill and luck, making it a favorite among casino-goers.
+                </p>
+                <h3>Get Started Below!</h3>
+                <div class="button-group">
+                    <button class="nav-button" onclick="window.location.href='info.html#rules'">RULES</button>
+                    <button class="nav-button" onclick="window.location.href='info.html#strategies'">STRATEGIES</button>
+                    <button class="nav-button" onclick="window.location.href='info.html#history'">HISTORY</button>
+                    <button class="nav-button" onclick="window.location.href='reviews.html'">REVIEWS</button>
+                    <button class="nav-button" onclick="window.location.href='about.html'">ABOUT</button>
+                  </div>
+              </div>
+              <div class="card-image">
+                <img src="media/blackjack_table.jpeg" alt="Blackjack Table" height="600px" width="450px">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <form action="https://httpbin.org/post" method="POST">
+                <label for="email">Join Our Newsletter for Weekly Tips!</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                <input type="hidden" id="name" name="name" value="Lorenzo Tommasi">
+                <button type="submit" id="join-btn">Join</button>
+            </form>
+          </div>
+    </main>
+  </body>
+</html>

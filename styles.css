@@ -1,0 +1,255 @@
+/* Header and Nav bar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  color: #212121;
+  padding: 1rem;
+  box-shadow: inset 0px -10px 10px -10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.logo {
+  margin-right: 2.5rem;
+  margin-left: 3.5rem;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  font-size: large;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  transition: all 0.2s ease;
+}
+nav a:hover {
+  background-color: #dbdbdb;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Content */
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: #212121;
+}
+main {
+  font-family: 'Courier New', Courier, monospace;
+}
+main h1, h2, h3 {
+  font-family: 'Inconsolata', monospace;
+}
+
+/* Landing Card */
+.card {
+  background-color: #7ab3ff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  margin: 7.8rem 12rem 12rem 12rem;
+  min-width: min-content;
+}
+.card h1, h2, h3 {
+  text-align: center;
+  padding-left: 4rem;
+}
+.card h3 {
+  padding-bottom: 2rem;
+}
+.card-content {
+  display: flex;
+  flex-direction: row;
+}
+.card-text {
+  flex-grow: 1;
+  padding-right: 1rem;
+  font-size: larger;
+}
+.card-image {
+  padding-left: 1rem;
+}
+.card-text p {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/* Landing Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.nav-button {
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  font-size: large;
+}
+.nav-button:hover {
+  background-color: #dbdbdb;
+  color: #212121;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* Form Card */
+.form-card {
+  background-color: #adcfed;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+  top: -8rem;
+  font-weight: bold;
+}
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-card label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.form-card input[type="email"] {
+  display: block;
+  width: 60%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.form-card button {
+  background-color: #212121;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.form-card button:hover {
+  background-color: #dbdbdb;
+  color: #212121;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* Rules - Card List */
+.card-list ul {
+  list-style-type: none;
+}
+.card-list li {
+  margin-bottom: 5px;
+  padding-left: 1em;
+  text-indent: -0.9em;
+}
+.card-list li:before {
+  content: "■";
+  color: #000000;
+  font-size: 0.5em;
+  margin-right: 10px;
+}
+.card h2:first-child {
+  margin-top: -0.5rem;
+}
+.card:nth-child(2) {
+  margin-top: -7rem;
+  background-color: #adcfed;
+}
+.card:last-child {
+  margin-top: -7rem;
+  background-color: #bae8e8;
+}
+h2 {
+  scroll-margin-top: 1000px;
+}
+
+/* Review Cards */
+#review-cards {
+  margin-top: 90px; 
+  margin-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.review-card {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 400px;
+  text-align: left;
+  font-size: larger;
+  text-align: center;
+}
+.review-card h4 {
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.review-card .rating {
+  display: flex;
+  margin: 0.5rem 0;
+  justify-content: center;
+}
+.review-card .rating span {
+  color: #ffd700;
+}
+.review-card .review-text {
+  margin-top: 1rem;
+  text-align: center;
+}
+#review-form label {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/* Review Form */
+#review-form input[type="text"],
+#review-form input[type="date"],
+#review-form select,
+#review-form textarea {
+  display: block;
+  width: 60%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+#review-form button {
+  background-color: #212121;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#review-form button:hover {
+  background-color: #dbdbdb;
+  color: #212121;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+}
+
